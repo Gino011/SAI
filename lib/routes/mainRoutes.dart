@@ -6,7 +6,7 @@ class Mainroutes {
   static final menuOptions = <MenuOption>[
     MenuOption(
       nombre: 'home',
-      icono: Icon(Icons.home),
+      icon: Icons.home,
       ruta: 'home',
       screen: HomeScreen(),
     ),
