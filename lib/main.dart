@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       title: "Recetas AI",
       theme: AppTheme.themeData,
-      initialRoute: AppRoutes.initialRoute,
+      initialRoute: "home",
       routes: AppRoutes.getRoutes(),
     );
   }
