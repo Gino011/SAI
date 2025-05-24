@@ -1,16 +1,16 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class MenuOption {
   final String ruta;
-  final Icon icono;
+  final Icon icon;
   final String nombre;
   final Widget screen;
 
   MenuOption({
-    required this.nombre,
-    required this.icono,
     required this.ruta,
-    required this.screen,
+    required this.icon,
+    required this.nombre,
+    required this.screen
   });
 
   @override

@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:sai/routes/mainRoutes.dart';
-import 'package:sai/themes/app_theme.dart';
 import 'package:sai/routes/app_routes.dart';
+import 'package:sai/routes/main_routes.dart';
+import 'package:sai/themes/app_theme.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(const MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget{
   const MyApp({super.key});
-  // This widget is the root of your application.
+
+  
   @override
-  Widget build(BuildContext context) {
-    AppRoutes.addRange(Mainroutes.menuOptions);
+  Widget build(BuildContext context){
+    AppRoutes.addRange(MainRoutes.menuOptions);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Nutri APP',
+      title: "Recetas AI",
       theme: AppTheme.themeData,
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getRoutes(),
